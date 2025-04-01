@@ -1,0 +1,29 @@
+ .header {
+    background-color: #e2e8f0; /* bg-gray-300 */
+}
+.main-image {
+    opacity: 0.7;
+}
+.main-text {
+    color: white;
+}
+
+main div h1{
+    color: #610C0C;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: center;
+    display: flex;   
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #e2e8f0;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+footer p{
+    color: rgb(0, 0, 0);
+}
