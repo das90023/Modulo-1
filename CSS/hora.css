@@ -1,0 +1,72 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  thead {
+    background-color: #d1fae5; /* bg-green-100 */
+  }
+  
+  /* Alternancia de fondo en filas */
+  tbody tr:nth-child(odd) {
+    background-color: #f3f4f6; /* bg-gray-100 */
+  }
+  
+  /* ========== Media Queries ========== */
+  
+  /* Tablet: ajusta texto */
+  @media (max-width: 1024px) {
+    th, td {
+      font-size: 0.95rem;
+      padding: 0.5rem;
+    }
+  }
+  
+  /* Móvil: convierte la tabla a diseño tipo bloque */
+  @media (max-width: 640px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+  
+    thead {
+      display: none;
+    }
+  
+    tr {
+      margin-bottom: 1.5rem;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      background-color: #f9fafb;
+      border-radius: 0.5rem;
+    }
+  
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      font-size: 0.95rem;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 1rem;
+      top: 0.75rem;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+  }

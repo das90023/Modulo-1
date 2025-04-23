@@ -1,0 +1,45 @@
+main .contenido {
+    padding: 2rem;
+  }
+  
+  main .contenido h1 {
+    font-size: 2rem; /* text-2xl */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  main .contenido p {
+    font-size: 1.125rem; /* text-lg */
+    line-height: 1.75rem;
+    text-align: justify;
+  }
+  
+  /* ==================== Breakpoints ==================== */
+  
+  /* Tablets: 481px - 768px */
+  @media (max-width: 768px) {
+    main .contenido h1 {
+      font-size: 1.5rem; /* text-xl */
+    }
+  
+    main .contenido p {
+      font-size: 1rem; /* text-base */
+    }
+  }
+  
+  /* Mobile: 320px - 480px */
+  @media (max-width: 480px) {
+    main .contenido {
+      padding: 1rem;
+    }
+  
+    main .contenido h1 {
+      font-size: 1.25rem; /* text-lg */
+    }
+  
+    main .contenido p {
+      font-size: 0.95rem; /* algo menor */
+      line-height: 1.5rem;
+    }
+  }

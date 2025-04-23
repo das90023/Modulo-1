@@ -70,19 +70,135 @@ footer{
     align-items: center;
 }
 
-@media (width <= 480px){
 
-    nav{
-        flex-direction: column;
+
+header nav {
+    flex-wrap: nowrap;
+  }
+  main img {
+    max-height: 600px;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e5e7eb; /* gray-200 */
+    font-size: 0.9rem;
+  }
+  
+  /* Mobile: 320px - 480px */
+  @media (max-width: 480px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
     }
-
-    .container{
-        flex-direction: column-reverse;
-        gap: 20px;
+  
+    header nav {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
     }
-
-    .container img{
-        width: 90%;
+  
+    .fa-user-circle {
+      display: none;
     }
+  
+    main h1 {
+      font-size: 1.5rem;
+    }
+  
+    main p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Tablet: 481px - 768px */
+  @media (min-width: 481px) and (max-width: 768px) {
+    header nav {
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    main h1 {
+      font-size: 2.5rem;
+    }
+  
+    main p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Laptop: 769px - 1024px */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    header nav a {
+      font-size: 0.95rem;
+    }
+  
+    main h1 {
+      font-size: 3.5rem;
+    }
+  
+    main p {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Large: 1025px - 1200px */
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    header nav a {
+      font-size: 1rem;
+    }
+  
+    main h1 {
+      font-size: 4.5rem;
+    }
+  
+    main p {
+      font-size: 1.5rem;
+    }
+  }
 
-}
+  main .hero-text h1 {
+    font-size: 3.75rem; /* 6xl */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  main .hero-text p {
+    font-size: 1.5rem; /* 2xl */
+    text-align: center;
+  }
+  
+  /* Laptop: 769px - 1024px */
+  @media (max-width: 1024px) {
+    main .hero-text h1 {
+      font-size: 3rem; /* 5xl */
+    }
+  
+    main .hero-text p {
+      font-size: 1.25rem; /* xl */
+    }
+  }
+  
+  /* Tablet: 481px - 768px */
+  @media (max-width: 768px) {
+    main .hero-text h1 {
+      font-size: 2.25rem; /* 4xl */
+    }
+  
+    main .hero-text p {
+      font-size: 1.125rem; /* lg */
+    }
+  }
+  
+  /* Mobile: 320px - 480px */
+  @media (max-width: 480px) {
+    main .hero-text h1 {
+      font-size: 1.5rem; /* 2xl */
+    }
+  
+    main .hero-text p {
+      font-size: 1rem; /* base */
+    }
+  }

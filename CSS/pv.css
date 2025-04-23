@@ -1,0 +1,183 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7fafc;
+}
+
+/* Estilo para el header */
+header {
+    background-color: #e2e8f0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .flex img {
+    height: 2.5rem;
+    width: auto;
+}
+
+header .flex i {
+    font-size: 1.5rem;
+}
+
+/* Estilo para el nav */
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el main */
+main {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+main .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+main h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+main p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+main img {
+    border-radius: 0.5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 640px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .flex {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin-bottom: 1rem;
+    }
+
+    main {
+        padding: 1rem 2%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    header .flex {
+        justify-content: space-between;
+    }
+
+    nav {
+        gap: 1.5rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .title {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+    header {
+        padding: 2rem;
+    }
+
+    main {
+        padding: 3rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    img {
+        width: 500px;
+        height: auto;
+    }
+}

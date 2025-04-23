@@ -1,0 +1,42 @@
+main .contenido-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  main .contenido-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  
+  /* ==================== Breakpoints ==================== */
+  
+  /* Laptop / Desktop */
+  @media (min-width: 1024px) {
+    main .contenido-img img {
+      width: 1000px;
+    }
+  }
+  
+  /* Tablet */
+  @media (max-width: 1023px) {
+    main .contenido-img {
+      padding: 0 1rem;
+    }
+  
+    main .contenido-img img {
+      width: 100%;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    main .contenido-img {
+      padding: 0 0.5rem;
+    }
+  
+    main .contenido-img img {
+      width: 100%;
+    }
+  }
